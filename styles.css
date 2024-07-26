@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .user-profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero .btn-primary {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.content {
+    margin-top: 40px;
+    position: relative;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    overflow: hidden;
+}
+
+.content-row {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.content-item {
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+.content-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}

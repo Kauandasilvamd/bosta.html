@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/netflix-logo.png" alt="Netflix Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Mais Recentes</a></li>
+                <li><a href="#">Minha Lista</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <img src="images/user-profile.jpg" alt="User Profile">
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Assista ao melhor conteúdo</h1>
+            <button class="btn-primary">Assista Agora</button>
+        </section>
+        <section class="content">
+            <h2>Populares na Netflix</h2>
+            <div class="content-wrapper">
+                <div class="content-row" id="content-row">
+                    <a href="movie1.html" class="content-item">
+                        <img src="images/movie1.jpg" alt="Movie 1">
+                    </a>
+                    <a href="movie2.html" class="content-item">
+                        <img src="images/movie2.jpg" alt="Movie 2">
+                    </a>
+                    <a href="movie3.html" class="content-item">
+                        <img src="images/movie3.jpg" alt="Movie 3">
+                    </a>
+                    <a href="movie4.html" class="content-item">
+                        <img src="images/movie4.jpg" alt="Movie 4">
+                    </a>
+                    <!-- Adicione mais itens aqui conforme necessário -->
+                </div>
+            </div>
+            <button class="btn-slide" id="prevBtn">Anterior</button>
+            <button class="btn-slide" id="nextBtn">Próximo</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
